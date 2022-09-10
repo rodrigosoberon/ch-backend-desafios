@@ -1,0 +1,26 @@
+[
+  {
+    "nombre": "Barril",
+    "precio": 124.35,
+    "thumbnail": "https://cdn0.iconfinder.com/data/icons/nature-and-environment-1/64/environment-barrel-pollution-leaking-oil-512.png",
+    "id": 1
+  },
+  {
+    "nombre": "Lata Cocacola",
+    "precio": 125.99,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/food-3-11/128/food_Soda-Pepsi-Cola-Coke-Beverage-512.png",
+    "id": 2
+  },
+  {
+    "nombre": "Panchito",
+    "precio": 320,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/food-and-drink-color/64/hotdog_fastfood_food_restaurant_sausage_bread_breakfast-512.png",
+    "id": 3
+  },
+  {
+    "nombre": "Haburguesa",
+    "precio": 1220,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/street-food-and-food-trucker-1/64/hamburger-fast-food-patty-bread-512.png",
+    "id": 4
+  }
+]
