@@ -1,0 +1,19 @@
+extends layout 
+block contenido
+    table.table
+        thead 
+            tr 
+                th(scope="col") Id
+                th(scope="col") Nombre
+                th(scope="col") Precio
+                th(scope="col") Imagen
+        tbody
+            for p in productos
+                tr
+                    th(scope="row")= p.id
+                    td(scope="row")=p.title
+                    td(scope="row")=p.price
+                    td(scope="row")
+                        img(src=p.thumbnail alt=p.title height="30px")
+    form(action="/" method="get")
+        button.btn(type="submit" class="btn-dark") Inicio

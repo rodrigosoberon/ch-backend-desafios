@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <title>Form con Handlebars</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cargar producto</h1>
+      <form action="/productos" method="post">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre: </label>
+          <input type="text" name="title" id="nombre" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+          <label for="precio" class="form-label">Precio: </label>
+          <input type="number" name="price" id="precio" class="form-control" />
+        </div>
+
+        <div class="mb-3">
+          <label for="url" class="form-label">url: </label>
+          <input type="url" name="thumbnail" id="url" class="form-control" />
+        </div>
+
+        <input type="submit" value="Enviar" class="btn btn-success" />
+      </form>
+
+      <hr />
+
+      <form action="/productos" method="get">
+        <button type="submit" class="btn btn-dark">Ver productos</button>
+      </form>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
