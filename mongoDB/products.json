@@ -1,0 +1,8 @@
+{"_id":{"$oid":"6353148ea692480f49b4a146"},"price":{"$numberDecimal":"1200"},"title":"Hamburguesa","url":"https://cdn3.iconfinder.com/data/icons/street-food-and-food-trucker-1/64/hamburger-fast-food-patty-bread-512.png","stock":100}
+{"_id":{"$oid":"6353148ea692480f49b4a147"},"price":{"$numberDecimal":"1900"},"title":"Mostaza","url":"https://cdn4.iconfinder.com/data/icons/allergenic-food/64/15-Mustard-512.png","stock":100}
+{"_id":{"$oid":"6353148ea692480f49b4a148"},"price":{"$numberDecimal":"2100"},"title":"Cafe","url":"https://cdn1.iconfinder.com/data/icons/food-3-11/128/food_Coffee-Cup-Disposable-Beverage-2-512.png","stock":100}
+{"_id":{"$oid":"6353148ea692480f49b4a149"},"price":{"$numberDecimal":"2500"},"title":"Taco","url":"https://cdn3.iconfinder.com/data/icons/world-cuisine-astute-vol-2/512/Tacos-512.png","stock":100}
+{"_id":{"$oid":"6353148fa692480f49b4a14a"},"price":{"$numberDecimal":"2800"},"title":"Pizza","url":"https://cdn2.iconfinder.com/data/icons/food-1136/512/pizza-food-cheese-recipe-homemade-512.png","stock":100}
+{"_id":{"$oid":"6353148fa692480f49b4a14b"},"price":{"$numberDecimal":"3000"},"title":"Ensalada","url":"https://cdn3.iconfinder.com/data/icons/food-set-2-1/91/Food_C136-512.png","stock":100}
+{"_id":{"$oid":"6353148fa692480f49b4a14c"},"price":{"$numberDecimal":"3500"},"title":"Manzana","url":"https://cdn4.iconfinder.com/data/icons/fruits-79/48/19-green_apple-512.png","stock":100}
+{"_id":{"$oid":"6353148fa692480f49b4a14d"},"price":{"$numberDecimal":"4900"},"title":"Helado","url":"https://cdn3.iconfinder.com/data/icons/food-and-drink-color/64/ice_cream_food_dessert_restaurant_tasty_sweet_cone-512.png","stock":0}

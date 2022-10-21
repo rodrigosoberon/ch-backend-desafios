@@ -1,0 +1,10 @@
+{"_id":{"$oid":"6352ef71eacc0c24434c3b86"},"username":"Rodrigo","message":"Hola! como va?","timestamp":{"$date":"2022-10-21T18:53:01.042Z"}}
+{"_id":{"$oid":"6352efb6a692480f49b4a135"},"message":"Buenas! Todo bien, y vos?","timestamp":"2022-10-21T18:53:42.082Z","username":"Emilia"}
+{"_id":{"$oid":"6352efb6a692480f49b4a136"},"message":"Bien bien, haciendo el desafio coder de esta semana...","timestamp":"2022-10-21T18:54:01.492Z","username":"Rodrigo"}
+{"_id":{"$oid":"6352efb7a692480f49b4a137"},"message":"Fantástico!!","timestamp":"2022-10-21T18:54:09.653Z","username":"Emilia"}
+{"_id":{"$oid":"6352efb7a692480f49b4a138"},"message":"A que hora es la reunión de hoy?","timestamp":"2022-10-21T19:02:06.787Z","username":"Rodrigo"}
+{"_id":{"$oid":"6352efb7a692480f49b4a139"},"message":"Tengo entendido que se pasó para el martes...","timestamp":"2022-10-21T19:03:29.028Z","username":"Emilia"}
+{"_id":{"$oid":"6352efb7a692480f49b4a13a"},"message":"Ah, nadie me aviso","timestamp":"2022-10-21T19:03:52.487Z","username":"Rodrigo"}
+{"_id":{"$oid":"6352efb7a692480f49b4a13b"},"message":"No te preocupes, yo me enteré de casualidad","timestamp":"2022-10-21T19:04:18.859Z","username":"Emilia"}
+{"_id":{"$oid":"6352efb7a692480f49b4a13c"},"message":"Bueno, muchas gracias!!","timestamp":"2022-10-21T19:04:40.388Z","username":"Rodrigo"}
+{"_id":{"$oid":"6352efb7a692480f49b4a13d"},"message":"No hay de que!","timestamp":"2022-10-21T19:04:48.702Z","username":"Emilia"}
