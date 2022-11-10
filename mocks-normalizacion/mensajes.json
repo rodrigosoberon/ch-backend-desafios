@@ -1,0 +1,93 @@
+[
+  {
+    "author": {
+      "email": "correo@electronico.com",
+      "nombre": "Carlos",
+      "apellido": "Gomez",
+      "edad": "87",
+      "alias": "CARLITO",
+      "avatar": "https://emojitool.com/img/google/android-10.0/boy-389.png"
+    },
+    "text": "Mensaje de prueba",
+    "timestamp": "2022-11-10T19:21:30.131Z",
+    "id": 1
+  },
+  {
+    "author": {
+      "email": "correo@electronico.com",
+      "nombre": "Carlos",
+      "apellido": "Gomez",
+      "edad": "87",
+      "alias": "CARLITO",
+      "avatar": "https://emojitool.com/img/google/android-10.0/boy-389.png"
+    },
+    "text": "Que tal",
+    "timestamp": "2022-11-10T19:21:45.835Z",
+    "id": 2
+  },
+  {
+    "author": {
+      "email": "prueba@gmail.com",
+      "nombre": "Luis",
+      "apellido": "Suarez",
+      "edad": "54",
+      "alias": "Luisito",
+      "avatar": "https://emojitool.com/img/apple/ios-15.4/robot-3688.png"
+    },
+    "text": "Que pasa?",
+    "timestamp": "2022-11-10T19:22:35.682Z",
+    "id": 3
+  },
+  {
+    "author": {
+      "email": "prueba@gmail.com",
+      "nombre": "Luis",
+      "apellido": "Suarez",
+      "edad": "54",
+      "alias": "Luisito",
+      "avatar": "https://emojitool.com/img/apple/ios-15.4/robot-3688.png"
+    },
+    "text": "aca",
+    "timestamp": "2022-11-10T19:22:40.498Z",
+    "id": 4
+  },
+  {
+    "author": {
+      "email": "prueba@gmail.com",
+      "nombre": "Luis",
+      "apellido": "Suarez",
+      "edad": "54",
+      "alias": "Luisito",
+      "avatar": "https://emojitool.com/img/apple/ios-15.4/robot-3688.png"
+    },
+    "text": "Baja el porcentaje?",
+    "timestamp": "2022-11-10T19:23:08.247Z",
+    "id": 5
+  },
+  {
+    "author": {
+      "email": "otromas@correo.com",
+      "nombre": "Franco",
+      "apellido": "Rojas",
+      "edad": "45",
+      "alias": "Frank",
+      "avatar": "https://emojitool.com/img/whatsapp/2.21.23.23/grinning-cat-1331.png"
+    },
+    "text": "Hola como va todo?",
+    "timestamp": "2022-11-10T19:29:51.601Z",
+    "id": 6
+  },
+  {
+    "author": {
+      "email": "otromas@correo.com",
+      "nombre": "Franco",
+      "apellido": "Rojas",
+      "edad": "45",
+      "alias": "Frank",
+      "avatar": "https://emojitool.com/img/whatsapp/2.21.23.23/grinning-cat-1331.png"
+    },
+    "text": "Saludos desde Laferrere",
+    "timestamp": "2022-11-10T19:30:05.281Z",
+    "id": 7
+  }
+]
