@@ -1,0 +1,6 @@
+$ pm2 start app.js --name="Server0" -- -p 8080 -m FORK
+$ pm2 start app.js --name="Server1" -- -p 8081 -m CLUSTER
+$ pm2 start app.js --name="Server2" -- -p 8082 -m FORK
+$ pm2 start app.js --name="Server3" -- -p 8083 -m FORK
+$ pm2 start app.js --name="Server4" -- -p 8084 -m FORK
+$ pm2 start app.js --name="Server5" -- -p 8085 -m FORK

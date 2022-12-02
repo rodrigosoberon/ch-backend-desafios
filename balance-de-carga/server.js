@@ -11,19 +11,15 @@ const infoWebRouter = require("./routers/web/info.js");
 const randomsWebRouter = require("./routers/web/randoms.js")
 
 
-
-
 const initServer = () => {
 
 // ---------------------------------------------------------------------------------
 // CONFIGURACION SERVIDOR
 
-
-
     const app = express();
     app.use(express.json())
     app.use(express.urlencoded({extended: true}))
-    app.use(express.static('public'))
+    //app.use(express.static('public'))
     initPassport()
 
 // ----------------------------------------------------------------------------------
@@ -57,8 +53,8 @@ const initServer = () => {
     app.use(randomsWebRouter)
 
     app.get('/datos', (req, res)=>{
-        console.log(`puerto ${PORT}`)
-        res.send(`Servidor express - PORT ${PORT} - PID : ${pid} - FyH: ${new Date().toLocaleString()}`)
+        console.log(`puerto ${process.port}`)
+        res.send(`Servidor express - PORT ${process.port} - PID : ${process.pid} - FyH: ${new Date().toLocaleString()}`)
     })
 
 

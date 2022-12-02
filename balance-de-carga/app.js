@@ -13,11 +13,10 @@ const args = yargs.default({
     m: 'FORK'
 }).argv
 const PORT = args.p
-//const PORT = process.argv[2] || 8080
 const MODE = args.m
 
 // ---------------------------------------------------------------------------------
-//EJECUTAR SERVIDOR
+//FUNCION PARA EJECUTAR SERVIDOR
 
 function runServer(){
     try{
