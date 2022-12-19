@@ -1,0 +1,845 @@
+Statistical profiling result from con-consoleLog-v8.log, (2061 ticks, 13 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+     25    1.2%          /usr/lib/system/libsystem_pthread.dylib
+     19    0.9%          /usr/lib/system/libsystem_kernel.dylib
+     18    0.9%          /usr/lib/system/libsystem_malloc.dylib
+     13    0.6%          /usr/lib/system/libsystem_c.dylib
+     11    0.5%          /usr/lib/libc++.1.dylib
+      2    0.1%          /usr/lib/system/libsystem_platform.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     11    0.5%    0.6%  LazyCompile: *resolve node:path:1091:10
+      8    0.4%    0.4%  LazyCompile: *parse /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      6    0.3%    0.3%  LazyCompile: *next /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:478:32
+      5    0.2%    0.3%  RegExp: ^(?:[^\x00]*?(?=(\{\{)))
+      5    0.2%    0.3%  LazyCompile: *SourceNode_walk /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/source-map/lib/source-node.js:221:53
+      4    0.2%    0.2%  LazyCompile: *wrap /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:101:22
+      4    0.2%    0.2%  LazyCompile: *makeAbs /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/glob/common.js:203:18
+      3    0.1%    0.2%  LazyCompile: *normalizeString node:path:66:25
+      3    0.1%    0.2%  LazyCompile: *anonymous /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:12:42
+      3    0.1%    0.2%  LazyCompile: *PathExpression /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:289:42
+      2    0.1%    0.1%  RegExp: ^(?:\{\{(~)?\^\s*(~)?\}\})
+      2    0.1%    0.1%  RegExp: (?:\r\n?|\n).*
+      2    0.1%    0.1%  LazyCompile: *step /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      2    0.1%    0.1%  LazyCompile: *compile /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      2    0.1%    0.1%  LazyCompile: *<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:368:47
+      2    0.1%    0.1%  Function: ^deserializeObject /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/parser/deserializer.js:65:27
+      1    0.0%    0.1%  RegExp: ^\[.*\]$
+      1    0.0%    0.1%  RegExp: ^\$ref$|^\$id$|^\$db$
+      1    0.0%    0.1%  RegExp: ^[\^_`a-zA-Z\-0-9!#$%&'*+.|~]+$
+      1    0.0%    0.1%  RegExp: ^(?:\{\{(~)?\{)
+      1    0.0%    0.1%  RegExp: ^(?:\{\{(~)?\*?)
+      1    0.0%    0.1%  RegExp: ^(?:\{\{(~)?>)
+      1    0.0%    0.1%  RegExp: ^(?:\{\{(~)?#\*?)
+      1    0.0%    0.1%  RegExp: ^(?:\{\{(~)?#>)
+      1    0.0%    0.1%  RegExp: ^(?:\s+)
+      1    0.0%    0.1%  RegExp: ^(?:\.\.)
+      1    0.0%    0.1%  RegExp: ^(?:\))
+      1    0.0%    0.1%  RegExp: ^(?:(~)?\}\})
+      1    0.0%    0.1%  RegExp: ^(?!\.)(?=.)[^/]*?\.hbs$
+      1    0.0%    0.1%  RegExp: \r?\n\s*?$
+      1    0.0%    0.1%  RegExp: [ \t]+$
+      1    0.0%    0.1%  LazyCompile: *syncExports node:internal/bootstrap/loaders:287:14
+      1    0.0%    0.1%  LazyCompile: *relative node:path:1190:11
+      1    0.0%    0.1%  LazyCompile: *popAsyncContext node:internal/async_hooks:554:25
+      1    0.0%    0.1%  LazyCompile: *opcode /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:347:26
+      1    0.0%    0.1%  LazyCompile: *normalize node:path:1127:12
+      1    0.0%    0.1%  LazyCompile: *next /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/router/index.js:177:16
+      1    0.0%    0.1%  LazyCompile: *mergeSource /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:267:36
+      1    0.0%    0.1%  LazyCompile: *join node:path:1166:7
+      1    0.0%    0.1%  LazyCompile: *getEncodingOps node:buffer:679:24
+      1    0.0%    0.1%  LazyCompile: *generateList /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:143:38
+      1    0.0%    0.1%  LazyCompile: *extend /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/utils.js:28:16
+      1    0.0%    0.1%  LazyCompile: *deserializeObject /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/parser/deserializer.js:65:27
+      1    0.0%    0.1%  LazyCompile: *castChunk /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:52:19
+      1    0.0%    0.1%  LazyCompile: *appendToBuffer /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:42:42
+      1    0.0%    0.1%  LazyCompile: *SourceNode /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/source-map/lib/source-node.js:35:20
+      1    0.0%    0.1%  LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:629:37
+      1    0.0%    0.1%  LazyCompile: *Glob._process /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/glob/glob.js:295:36
+      1    0.0%    0.1%  LazyCompile: *<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/source-map/lib/source-node.js:174:29
+      1    0.0%    0.1%  LazyCompile: *<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:130:39
+      1    0.0%    0.1%  LazyCompile: *<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:30:40
+      1    0.0%    0.1%  LazyCompile: *<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:167:47
+      1    0.0%    0.1%  Function: ^write /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connection.js:427:15
+      1    0.0%    0.1%  Function: ^updateRsFromPrimary /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/sdam/topology_description.js:257:29
+      1    0.0%    0.1%  Function: ^toBin /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/commands.js:345:10
+      1    0.0%    0.1%  Function: ^supportsOpMsg /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connection.js:408:23
+      1    0.0%    0.1%  Function: ^stripFlags /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/helpers.js:52:20
+      1    0.0%    0.1%  Function: ^slice /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/inflight/inflight.js:48:16
+      1    0.0%    0.1%  Function: ^shouldTouch /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-session/index.js:453:25
+      1    0.0%    0.1%  Function: ^setupParams /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1034:36
+      1    0.0%    0.1%  Function: ^readdir node:fs:1368:17
+      1    0.0%    0.1%  Function: ^readFileAfterRead node:internal/fs/read_file_context:25:27
+      1    0.0%    0.1%  Function: ^parse /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/commands.js:222:10
+      1    0.0%    0.1%  Function: ^parse /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/content-type/index.js:106:16
+      1    0.0%    0.1%  Function: ^next /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/send/index.js:728:17
+      1    0.0%    0.1%  Function: ^newAsyncId node:internal/async_hooks:417:20
+      1    0.0%    0.1%  Function: ^msFromTimeSpec node:internal/fs/utils:447:24
+      1    0.0%    0.1%  Function: ^markAsUntransferable node:internal/buffer:1048:30
+      1    0.0%    0.1%  Function: ^makeCallback node:fs:185:22
+      1    0.0%    0.1%  Function: ^join node:path:1166:7
+      1    0.0%    0.1%  Function: ^initHooksExist node:internal/async_hooks:479:24
+      1    0.0%    0.1%  Function: ^get hello /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connection.js:75:14
+      1    0.0%    0.1%  Function: ^formatWithOptions node:internal/util/inspect:2024:27
+      1    0.0%    0.1%  Function: ^end /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-session/index.js:250:27
+      1    0.0%    0.1%  Function: ^emit node:events:475:44
+      1    0.0%    0.1%  Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      1    0.0%    0.1%  Function: ^classifySexpr /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:363:40
+      1    0.0%    0.1%  Function: ^_write node:internal/streams/writable:283:16
+      1    0.0%    0.1%  Function: ^_flushOutput node:_http_outgoing:951:63
+      1    0.0%    0.1%  Function: ^__awaiter /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:18:54
+      1    0.0%    0.1%  Function: ^Writable.uncork node:internal/streams/writable:341:37
+      1    0.0%    0.1%  Function: ^URLContext node:internal/url:161:14
+      1    0.0%    0.1%  Function: ^SubExpression /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:236:40
+      1    0.0%    0.1%  Function: ^ReadableState node:internal/streams/readable:78:23
+      1    0.0%    0.1%  Function: ^Readable.push node:internal/streams/readable:227:35
+      1    0.0%    0.1%  Function: ^Readable node:internal/streams/readable:181:18
+      1    0.0%    0.1%  Function: ^Long.fromNumber /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/long.js:131:32
+      1    0.0%    0.1%  Function: ^Long /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/long.js:59:18
+      1    0.0%    0.1%  Function: ^Glob._readdirError /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/glob/glob.js:581:41
+      1    0.0%    0.1%  Function: ^Glob._readdir /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/glob/glob.js:525:36
+      1    0.0%    0.1%  Function: ^FastBuffer node:internal/buffer:958:14
+      1    0.0%    0.1%  Function: ^ExpressHandlebars.getTemplate /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:162:56
+      1    0.0%    0.1%  Function: ^BinMsg /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/commands.js:394:16
+      1    0.0%    0.1%  Function: ^<anonymous> node:buffer:349:36
+      1    0.0%    0.1%  Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/minimatch/minimatch.js:227:22
+      1    0.0%    0.1%  Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/glob/glob.js:625:43
+      1    0.0%    0.1%  Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/glob/glob.js:147:29
+      1    0.0%    0.1%  Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:368:47
+      1    0.0%    0.1%  Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:366:57
+      1    0.0%    0.1%  Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:249:57
+
+ [C++]:
+   ticks  total  nonlib   name
+    984   47.7%   49.9%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+    359   17.4%   18.2%  T _posix_spawn_file_actions_adddup2
+    220   10.7%   11.2%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     61    3.0%    3.1%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+     29    1.4%    1.5%  T _semaphore_destroy
+     22    1.1%    1.1%  T _mach_get_times
+     12    0.6%    0.6%  T _necp_open
+     11    0.5%    0.6%  T _issetugid
+     10    0.5%    0.5%  T __simple_getenv
+      9    0.4%    0.5%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+      9    0.4%    0.5%  T node::fs::NewFSReqCallback(v8::FunctionCallbackInfo<v8::Value> const&)
+      9    0.4%    0.5%  T _kdebug_trace_string
+      7    0.3%    0.4%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.3%    0.4%  t node::fs::ReadDir(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.3%    0.4%  T _host_request_notification
+      6    0.3%    0.3%  T node::fs::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      6    0.3%    0.3%  T _os_unfair_recursive_lock_unlock
+      5    0.2%    0.3%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      4    0.2%    0.2%  t ___pfz_setup
+      3    0.1%    0.2%  t node::EnvGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      3    0.1%    0.2%  T _read$NOCANCEL
+      2    0.1%    0.1%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+      2    0.1%    0.1%  t __os_once_gate_broadcast
+      2    0.1%    0.1%  T node::Environment::RunAndClearNativeImmediates(bool)
+      2    0.1%    0.1%  T _thread_destruct_special_reply_port
+      2    0.1%    0.1%  T __platform_strcmp
+      2    0.1%    0.1%  T _OSAtomicIncrement32
+      1    0.0%    0.1%  t void std::__1::__tree_balance_after_insert<std::__1::__tree_node_base<void*>*>(std::__1::__tree_node_base<void*>*, std::__1::__tree_node_base<void*>*)
+      1    0.0%    0.1%  t void node::Buffer::(anonymous namespace)::StringWrite<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.1%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)2>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.1%  t std::__1::__tree<int, std::__1::less<int>, std::__1::allocator<int> >::destroy(std::__1::__tree_node<int, void*>*)
+      1    0.0%    0.1%  t std::__1::__hash_table<unsigned long, std::__1::hash<unsigned long>, std::__1::equal_to<unsigned long>, std::__1::allocator<unsigned long> >::remove(std::__1::__hash_const_iterator<std::__1::__hash_node<unsigned long, void*>*>)
+      1    0.0%    0.1%  t std::__1::__hash_table<unsigned long long, std::__1::hash<unsigned long long>, std::__1::equal_to<unsigned long long>, std::__1::allocator<unsigned long long> >::__rehash(unsigned long)
+      1    0.0%    0.1%  t node::BaseObject::decrease_refcount()
+      1    0.0%    0.1%  T node::fs::FSReqCallback::Resolve(v8::Local<v8::Value>)
+      1    0.0%    0.1%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.1%  T node::InternalCallbackScope::InternalCallbackScope(node::Environment*, v8::Local<v8::Object>, node::async_context const&, int)
+      1    0.0%    0.1%  T node::InternalCallbackScope::Close()
+      1    0.0%    0.1%  T _semaphore_create
+      1    0.0%    0.1%  T _posix_spawnattr_setmacpolicyinfo_np
+      1    0.0%    0.1%  T _mach_port_construct
+      1    0.0%    0.1%  T _mach_msg_server_once
+      1    0.0%    0.1%  T _mach_msg_destroy
+      1    0.0%    0.1%  T _OSAtomicDecrement32
+
+ [Summary]:
+   ticks  total  nonlib   name
+    148    7.2%    7.5%  JavaScript
+   1812   87.9%   91.8%  C++
+    103    5.0%    5.2%  GC
+     88    4.3%          Shared libraries
+     13    0.6%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+    911   70.5%   44.2%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+    220   17.0%   10.7%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+     61    4.7%    3.0%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+     22    1.7%    1.1%  T _semaphore_destroy
+     10    0.8%    0.5%  T _necp_open
+      9    0.7%    0.4%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+      9    0.7%    0.4%  T node::fs::NewFSReqCallback(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.5%    0.3%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.5%    0.3%  t node::fs::ReadDir(v8::FunctionCallbackInfo<v8::Value> const&)
+      7    0.5%    0.3%  T __simple_getenv
+      6    0.5%    0.3%  T node::fs::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.2%    0.1%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      3    0.2%    0.1%  t node::EnvGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+      3    0.2%    0.1%  T _os_unfair_recursive_lock_unlock
+      2    0.2%    0.1%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+      2    0.2%    0.1%  T _thread_destruct_special_reply_port
+      1    0.1%    0.0%  t void std::__1::__tree_balance_after_insert<std::__1::__tree_node_base<void*>*>(std::__1::__tree_node_base<void*>*, std::__1::__tree_node_base<void*>*)
+      1    0.1%    0.0%  t void node::Buffer::(anonymous namespace)::StringWrite<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.0%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)2>(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.0%  t std::__1::__tree<int, std::__1::less<int>, std::__1::allocator<int> >::destroy(std::__1::__tree_node<int, void*>*)
+      1    0.1%    0.0%  t std::__1::__hash_table<unsigned long long, std::__1::hash<unsigned long long>, std::__1::equal_to<unsigned long long>, std::__1::allocator<unsigned long long> >::__rehash(unsigned long)
+      1    0.1%    0.0%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.1%    0.0%  T _read$NOCANCEL
+      1    0.1%    0.0%  T _mach_msg_server_once
+      1    0.1%    0.0%  T _OSAtomicIncrement32
+      1    0.1%    0.0%  T _OSAtomicDecrement32
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+    984   47.7%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+     81    8.2%    t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+     12   14.8%      LazyCompile: *next /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:478:32
+     10   83.3%        LazyCompile: *parse /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+     10  100.0%          Function: ^parseWithoutProcessing /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:33:32
+      5   50.0%            LazyCompile: *<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      5   50.0%            Function: ^parse /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:51:15
+      2   16.7%        Function: ^lex /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:525:30
+      2  100.0%          LazyCompile: *parse /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      2  100.0%            Function: ^parseWithoutProcessing /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:33:32
+      6    7.4%      t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+      4   66.7%        LazyCompile: *next /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:478:32
+      4  100.0%          LazyCompile: *parse /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      4  100.0%            Function: ^parseWithoutProcessing /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/base.js:33:32
+      1   16.7%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      1  100.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      1  100.0%            Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1   16.7%        Function: ^quotedString /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:118:38
+      1  100.0%          Function: ^pushSource /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      1  100.0%            LazyCompile: ~append /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:394:26
+      3    3.7%      Function: ^removeColors node:internal/util:76:22
+      3  100.0%        Function: ^isBelowBreakLength node:internal/util/inspect:1878:28
+      3  100.0%          Function: ^reduceToSingleString node:internal/util/inspect:1902:30
+      3  100.0%            Function: ^formatRaw node:internal/util/inspect:820:19
+      3    3.7%      Function: ^deserializeObject /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/parser/deserializer.js:65:27
+      2   66.7%        Function: ^deserialize /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/parser/deserializer.js:36:21
+      2  100.0%          Function: ^deserialize /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/bson.js:161:21
+      2  100.0%            Function: ^parse /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/commands.js:426:10
+      1   33.3%        LazyCompile: ~deserialize /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/parser/deserializer.js:36:21
+      1  100.0%          LazyCompile: ~deserialize /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/bson.js:161:21
+      1  100.0%            LazyCompile: ~parse /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/commands.js:222:10
+      3    3.7%      Function: ^FastBuffer node:internal/buffer:958:14
+      2   66.7%        Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      2  100.0%          Function: ^allocUnsafeSlow node:buffer:383:50
+      2  100.0%            Function: ^readFileAfterStat node:fs:326:27
+      1   33.3%        Function: ^randomBytes node:internal/crypto/random:91:21
+      1  100.0%          Function: ^randomBytesSync /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/random-bytes/index.js:72:25
+      1  100.0%            Function: ^uidSync /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/uid-safe/index.js:75:18
+      2    2.5%      LazyCompile: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/minimatch/minimatch.js:222:19
+      2  100.0%        t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+      2  100.0%          LazyCompile: ~make /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/minimatch/minimatch.js:188:8
+      2  100.0%            LazyCompile: ~Minimatch /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/minimatch/minimatch.js:163:15
+      2    2.5%      LazyCompile: *deserializeObject /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/parser/deserializer.js:65:27
+      2  100.0%        Function: ^deserialize /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/parser/deserializer.js:36:21
+      2  100.0%          Function: ^deserialize /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/bson.js:161:21
+      2  100.0%            Function: ^parse /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/commands.js:426:10
+      2    2.5%      LazyCompile: *compile /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1   50.0%        LazyCompile: *<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      1  100.0%          LazyCompile: *step /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1  100.0%            LazyCompile: *fulfilled /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+      1   50.0%        Function: ^compileChildren /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:805:44
+      1  100.0%          LazyCompile: *compile /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1  100.0%            LazyCompile: *<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      2    2.5%      LazyCompile: *Glob._processReaddir2 /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/glob/glob.js:375:44
+      2  100.0%        Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/glob/glob.js:370:43
+      2  100.0%          LazyCompile: *RES /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/inflight/inflight.js:18:28
+      2  100.0%            Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/inflight/inflight.js:38:35
+      2    2.5%      Function: ^inflight /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/inflight/inflight.js:7:19
+      2  100.0%        LazyCompile: *wrapper /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/wrappy/wrappy.js:19:19
+      1   50.0%          LazyCompile: *Glob._process /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/glob/glob.js:295:36
+      1  100.0%            Function: ^Glob._processGlobStar2 /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/glob/glob.js:631:45
+      1   50.0%          Function: ^Glob._readdir /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/glob/glob.js:525:36
+      1  100.0%            Function: ^Glob._processGlobStar /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/glob/glob.js:623:44
+      2    2.5%      Function: ^findLongestRegisteredExtension node:internal/modules/cjs/loader:413:40
+      2  100.0%        Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      2  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      2  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      2    2.5%      Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:98:47
+      1   50.0%        LazyCompile: *step /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1  100.0%          LazyCompile: *<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:30:40
+      1  100.0%            Function: ^fulfilled /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+      1   50.0%        Function: ^step /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1  100.0%          Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:30:40
+      1  100.0%            Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:20:46
+      1    1.2%      LazyCompile: ~update /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/sdam/topology_description.js:131:11
+      1  100.0%        Function: ^serverUpdateHandler /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/sdam/topology.js:320:24
+      1  100.0%          Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/sdam/topology.js:480:53
+      1  100.0%            Function: ^emit node:events:475:44
+      1    1.2%      LazyCompile: ~pathtoRegexp /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/path-to-regexp/index.js:28:22
+      1  100.0%        LazyCompile: ~Layer /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/router/layer.js:33:15
+      1  100.0%          LazyCompile: ~Layer /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/router/layer.js:33:15
+      1  100.0%            LazyCompile: ~Route.<computed> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/router/route.js:202:37
+      1    1.2%      LazyCompile: ~parse node:url:167:37
+      1  100.0%        LazyCompile: ~urlParse node:url:151:18
+      1  100.0%          LazyCompile: ~validate_config /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:195:25
+      1  100.0%            LazyCompile: ~module.exports.evaluate /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/@mapbox/node-pre-gyp/lib/util/versioning.js:277:35
+      1    1.2%      LazyCompile: ~parse /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bytes/index.js:141:15
+      1  100.0%        LazyCompile: ~urlencoded /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/body-parser/lib/types/urlencoded.js:43:21
+      1  100.0%          LazyCompile: ~initServer /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/server.js:17:20
+      1  100.0%            Function: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/app.js:1:1
+      1    1.2%      LazyCompile: ~isIPv6 node:internal/net:35:16
+      1  100.0%        LazyCompile: ~isIP node:internal/net:39:14
+      1  100.0%          LazyCompile: ~parseSslOptions /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connect.js:237:25
+      1  100.0%            LazyCompile: ~makeConnection /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connect.js:256:24
+      1    1.2%      LazyCompile: ~header /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/response.js:777:29
+      1  100.0%        LazyCompile: ~contentType /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/response.js:619:32
+      1  100.0%          LazyCompile: ~send /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/response.js:111:25
+      1  100.0%            LazyCompile: ~done /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/response.js:1033:27
+      1    1.2%      LazyCompile: ~getColorDepth node:internal/tty:106:23
+      1  100.0%        LazyCompile: ~value node:internal/console/constructor:300:20
+      1  100.0%          LazyCompile: ~value node:internal/console/constructor:321:20
+      1  100.0%            LazyCompile: ~log node:internal/console/constructor:359:6
+      1    1.2%      LazyCompile: ~deserializeObject /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%        LazyCompile: ~deserialize /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/parser/deserializer.js:36:21
+      1  100.0%          LazyCompile: ~deserialize /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/bson.js:161:21
+      1  100.0%            LazyCompile: ~parse /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/commands.js:222:10
+      1    1.2%      LazyCompile: ~charSet /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/minimatch/minimatch.js:46:17
+      1  100.0%        Function: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/minimatch/minimatch.js:1:1
+      1  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1    1.2%      LazyCompile: ~Readable.read /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/readable-stream/lib/_stream_readable.js:392:36
+      1  100.0%        LazyCompile: ~flow /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/readable-stream/lib/_stream_readable.js:935:14
+      1  100.0%          LazyCompile: ~resume_ /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/readable-stream/lib/_stream_readable.js:909:17
+      1  100.0%            LazyCompile: ~processTicksAndRejections node:internal/process/task_queues:68:35
+      1    1.2%      LazyCompile: ~MongoStore /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/connect-mongo/build/main/lib/MongoStore.js:75:16
+      1  100.0%        LazyCompile: ~create /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/connect-mongo/build/main/lib/MongoStore.js:135:18
+      1  100.0%          LazyCompile: ~initServer /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/server.js:17:20
+      1  100.0%            Function: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/app.js:1:1
+      1    1.2%      LazyCompile: ~MongoCredentials /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/auth/mongo_credentials.js:31:16
+      1  100.0%        LazyCompile: ~merge /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/auth/mongo_credentials.js:122:17
+      1  100.0%          LazyCompile: ~resolveSRVRecord /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/connection_string.js:45:32
+      1  100.0%            t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    1.2%      LazyCompile: *readPackageScope node:internal/modules/cjs/loader:321:26
+      1  100.0%        Function: ^trySelf node:internal/modules/cjs/loader:441:17
+      1  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    1.2%      LazyCompile: *pushSource /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      1  100.0%        Function: ^appendEscaped /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:416:40
+      1  100.0%          LazyCompile: *compile /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1  100.0%            LazyCompile: *<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      1    1.2%      LazyCompile: *parse /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/minimatch/minimatch.js:413:9
+      1  100.0%        t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+      1  100.0%          Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/minimatch/minimatch.js:222:19
+      1  100.0%            t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    1.2%      LazyCompile: *WhitespaceControl.Program /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/whitespace-control.js:19:48
+      1  100.0%        LazyCompile: *accept /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/visitor.js:57:26
+      1  100.0%          LazyCompile: *<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      1  100.0%            LazyCompile: *step /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1    1.2%      LazyCompile: *<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:251:47
+      1  100.0%        LazyCompile: *step /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1  100.0%          LazyCompile: *<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:30:40
+      1  100.0%            Function: ^fulfilled /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+      1    1.2%      Function: ^updateServers /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/sdam/topology.js:488:23
+      1  100.0%        Function: ^serverUpdateHandler /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/sdam/topology.js:320:24
+      1  100.0%          Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/sdam/topology.js:480:53
+      1  100.0%            Function: ^emit node:events:475:44
+      1    1.2%      Function: ^setHeader node:_http_outgoing:574:57
+      1  100.0%        Function: ^header /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/response.js:777:29
+      1  100.0%          Function: ^send /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/response.js:111:25
+      1  100.0%            Function: ^done /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/response.js:1033:27
+      1    1.2%      Function: ^session /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-session/index.js:179:26
+      1  100.0%        Function: ^handle /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%          Function: ^trim_prefix /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/router/index.js:293:23
+      1  100.0%            LazyCompile: *next /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/router/index.js:177:16
+      1    1.2%      Function: ^send /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/response.js:111:25
+      1  100.0%        Function: ^done /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/response.js:1033:27
+      1  100.0%          LazyCompile: *<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:251:47
+      1  100.0%            LazyCompile: *step /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1    1.2%      Function: ^scopedId /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/ast.js:14:32
+      1  100.0%        LazyCompile: ~PathExpression /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:289:42
+      1  100.0%          Function: ^accept /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:101:26
+      1  100.0%            LazyCompile: ~simpleSexpr /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:264:36
+      1    1.2%      Function: ^resolve node:path:1091:10
+      1  100.0%        Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:368:47
+      1  100.0%          Function: ^step /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1  100.0%            Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:30:40
+      1    1.2%      Function: ^realpathSync node:fs:2425:22
+      1  100.0%        Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+      1  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      1  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      1    1.2%      Function: ^quotedString /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/code-gen.js:118:38
+      1  100.0%        Function: ^pushSource /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:881:34
+      1  100.0%          Function: ^compile /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1  100.0%            Function: ^compileInput /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      1    1.2%      Function: ^parse /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/minimatch/minimatch.js:413:9
+      1  100.0%        t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+      1  100.0%          Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/minimatch/minimatch.js:222:19
+      1  100.0%            t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    1.2%      Function: ^next /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:478:32
+      1  100.0%        Function: ^lex /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:525:30
+      1  100.0%          Function: ^lex /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:295:25
+      1  100.0%            Function: ^parse /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/parser.js:269:30
+      1    1.2%      Function: ^makeAbs /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/glob/common.js:203:18
+      1  100.0%        Function: ^Glob._makeAbs /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/glob/glob.js:255:36
+      1  100.0%          Function: ^Glob._process /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/glob/glob.js:295:36
+      1  100.0%            Function: ^Glob._processGlobStar2 /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/glob/glob.js:631:45
+      1    1.2%      Function: ^isStaleServerDescription /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/sdam/topology.js:616:34
+      1  100.0%        Function: ^serverUpdateHandler /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/sdam/topology.js:320:24
+      1  100.0%          Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/sdam/topology.js:480:53
+      1  100.0%            Function: ^emit node:events:475:44
+      1    1.2%      Function: ^format /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/content-type/index.js:65:17
+      1  100.0%        Function: ^setCharset /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/utils.js:248:41
+      1  100.0%          Function: ^send /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/response.js:111:25
+      1  100.0%            Function: ^done /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/response.js:1033:27
+      1    1.2%      Function: ^fn node:internal/util:345:14
+      1  100.0%        Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:368:47
+      1  100.0%          LazyCompile: *step /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1  100.0%            Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:30:40
+      1    1.2%      Function: ^finish /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/glob/common.js:122:17
+      1  100.0%        Function: ^Glob._finish /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/glob/glob.js:185:35
+      1  100.0%          Function: ^done /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/glob/glob.js:171:17
+      1  100.0%            Function: ^Glob._processGlobStar2 /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/glob/glob.js:631:45
+      1    1.2%      Function: ^expressInit /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/middleware/init.js:29:30
+      1  100.0%        Function: ^handle /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%          Function: ^trim_prefix /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/router/index.js:293:23
+      1  100.0%            LazyCompile: *next /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/router/index.js:177:16
+      1    1.2%      Function: ^escapeExpression /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/utils.js:77:26
+      1  100.0%        Function: ^<anonymous> :1:20
+      1  100.0%          Function: ^prog /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/runtime.js:260:16
+      1  100.0%            Function: ^execIteration /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/helpers/each.js:39:27
+      1    1.2%      Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%        Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1  100.0%          Function: ^require node:internal/modules/cjs/helpers:101:31
+      1  100.0%            Function: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/saslprep/index.js:1:1
+      1    1.2%      Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    1.2%      Function: ^HostAddress /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/utils.js:871:16
+      1  100.0%        Function: ^fromString /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/utils.js:929:22
+      1  100.0%          Function: ^get hostAddress /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/sdam/server_description.js:65:20
+      1  100.0%            Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/sdam/server.js:61:55
+      1    1.2%      Function: ^Glob._readdirError /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/glob/glob.js:581:41
+      1  100.0%        Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/glob/glob.js:551:19
+      1  100.0%          Function: ^<anonymous> node:fs:188:10
+      1    1.2%      Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/minimatch/minimatch.js:222:19
+      1  100.0%        t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+      1  100.0%          Function: ^make /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/minimatch/minimatch.js:188:8
+      1  100.0%            Function: ^Minimatch /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/minimatch/minimatch.js:163:15
+      1    1.2%      Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:201:47
+      1  100.0%        LazyCompile: *step /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1  100.0%          Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:30:40
+      1  100.0%            Function: ^fulfilled /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+     32    3.3%    Function: ^handleWriteReq node:internal/stream_base_commons:45:24
+     32  100.0%      Function: ^writeGeneric node:internal/stream_base_commons:147:22
+     32  100.0%        Function: ^Socket._writeGeneric node:net:791:42
+     32  100.0%          Function: ^Socket._write node:net:828:35
+     32  100.0%            Function: ^writeOrBuffer node:internal/streams/writable:365:23
+     28    2.8%    Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     22   78.6%      Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      5   22.7%        Function: ~<anonymous> node:crypto:1:1
+      5  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      5  100.0%            Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      3   13.6%        Function: ~<anonymous> node:http:1:1
+      3  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3  100.0%            LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      3   13.6%        Function: ~<anonymous> node:_http_client:1:1
+      3  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      2    9.1%        Function: ~<anonymous> node:tls:1:1
+      2  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2  100.0%            Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      2    9.1%        Function: ~<anonymous> node:internal/child_process:1:1
+      2  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    4.5%        LazyCompile: ~lazyRequire node:internal/crypto/util:67:21
+      1  100.0%          LazyCompile: ~get node:crypto:287:8
+      1  100.0%            t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    4.5%        Function: ~<anonymous> node:internal/crypto/hkdf:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    4.5%        Function: ~<anonymous> node:internal/cluster/primary:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    4.5%        Function: ~<anonymous> node:cluster:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      1    4.5%        Function: ~<anonymous> node:child_process:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    4.5%        Function: ~<anonymous> node:assert:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      1    4.5%        Function: ~<anonymous> node:_tls_wrap:1:1
+      1  100.0%          Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      5   17.9%      Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      5  100.0%        Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      5  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      5  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      1    3.6%      LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      1  100.0%        LazyCompile: ~loadNativeModule node:internal/modules/cjs/helpers:44:26
+      1  100.0%          LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+      1  100.0%            LazyCompile: ~Module.require node:internal/modules/cjs/loader:997:36
+     20    2.0%    Function: ^deserializeObject /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/parser/deserializer.js:65:27
+     11   55.0%      Function: ^deserializeObject /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/parser/deserializer.js:65:27
+     11  100.0%        Function: ^deserialize /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/parser/deserializer.js:36:21
+     11  100.0%          Function: ^deserialize /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/bson.js:161:21
+     11  100.0%            Function: ^parse /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/commands.js:426:10
+      8   40.0%      Function: ^deserialize /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/parser/deserializer.js:36:21
+      8  100.0%        Function: ^deserialize /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/bson.js:161:21
+      8  100.0%          Function: ^parse /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/commands.js:426:10
+      8  100.0%            Function: ^onMessage /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connection.js:157:14
+      1    5.0%      LazyCompile: ~deserialize /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/parser/deserializer.js:36:21
+      1  100.0%        Function: ^deserialize /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/bson.js:161:21
+      1  100.0%          LazyCompile: ~parse /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/commands.js:426:10
+      1  100.0%            LazyCompile: ~onMessage /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connection.js:157:14
+     18    1.8%    LazyCompile: *compile /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+     10   55.6%      LazyCompile: *<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+     10  100.0%        LazyCompile: *step /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      5   50.0%          LazyCompile: *fulfilled /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+      5   50.0%          LazyCompile: *<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:30:40
+      5  100.0%            Function: ^fulfilled /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+      6   33.3%      Function: ^compileInput /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:507:24
+      6  100.0%        Function: ^ret /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      6  100.0%          Function: ^ExpressHandlebars._renderTemplate /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:321:60
+      6  100.0%            Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      2   11.1%      Function: ^compileChildren /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:805:44
+      2  100.0%        LazyCompile: *compile /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      2  100.0%          LazyCompile: *<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      2  100.0%            LazyCompile: *step /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+     16    1.6%    LazyCompile: *step /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      7   43.8%      LazyCompile: *<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:20:46
+      7  100.0%        t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+      7  100.0%          Function: ^__awaiter /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:18:54
+      3   42.9%            Function: ^ExpressHandlebars.getTemplate /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:162:56
+      1   14.3%            LazyCompile: *<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:251:47
+      1   14.3%            Function: ^ExpressHandlebars.renderView /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:246:55
+      1   14.3%            Function: ^ExpressHandlebars.render /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:222:51
+      1   14.3%            Function: ^ExpressHandlebars.getTemplates /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:196:57
+      4   25.0%      LazyCompile: *<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:30:40
+      3   75.0%        Function: ^fulfilled /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+      1   25.0%        LazyCompile: *<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:167:47
+      1  100.0%          LazyCompile: *step /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1  100.0%            LazyCompile: *__awaiter /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:18:54
+      1    6.3%      LazyCompile: *fulfilled /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+      1    6.3%      LazyCompile: *__awaiter /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:18:54
+      1  100.0%        LazyCompile: *<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:251:47
+      1  100.0%          LazyCompile: *step /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1  100.0%            LazyCompile: *__awaiter /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:18:54
+      1    6.3%      LazyCompile: *<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:251:47
+      1  100.0%        LazyCompile: *step /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1  100.0%          LazyCompile: *<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:30:40
+      1  100.0%            Function: ^fulfilled /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+      1    6.3%      LazyCompile: *<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      1  100.0%        LazyCompile: *step /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1  100.0%          LazyCompile: *<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:251:47
+      1  100.0%            LazyCompile: *step /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:31:18
+      1    6.3%      Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:30:40
+      1  100.0%        Function: ^fulfilled /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:21:27
+     15    1.5%    LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+     15  100.0%      LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      3   20.0%        Function: ~<anonymous> node:internal/modules/esm/loader:1:1
+      3  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3  100.0%            LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      3   20.0%        Function: ~<anonymous> node:internal/modules/esm/fetch_module:1:1
+      3  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      3  100.0%            LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      2   13.3%        LazyCompile: ~initializeCJSLoader node:internal/bootstrap/pre_execution:477:29
+      2  100.0%          LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      2  100.0%            Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      2   13.3%        Function: ~<anonymous> node:internal/process/esm_loader:1:1
+      2  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2  100.0%            LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    6.7%        Function: ~<anonymous> node:internal/source_map/source_map_cache:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    6.7%        Function: ~<anonymous> node:internal/modules/esm/module_map:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    6.7%        Function: ~<anonymous> node:internal/modules/esm/get_source:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1    6.7%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    6.7%        Function: ~<anonymous> node:internal/fs/promises:1:1
+      1  100.0%          LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%            LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+     15    1.5%    Function: ^read node:internal/modules/package_json_reader:16:14
+     15  100.0%      Function: ^readPackage node:internal/modules/cjs/loader:290:21
+     15  100.0%        Function: ^resolveExports node:internal/modules/cjs/loader:472:24
+     15  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+     13   86.7%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      2   13.3%            LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:848:35
+     15    1.5%    Function: ^memoryUsage node:internal/process/per_thread:168:23
+     15  100.0%      Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/routers/web/info.js:7:28
+     15  100.0%        Function: ^handle /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/router/layer.js:86:49
+     15  100.0%          Function: ^next /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/router/route.js:116:16
+     15  100.0%            Function: ^dispatch /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/router/route.js:98:45
+     13    1.3%    Function: ^stat node:internal/modules/cjs/loader:151:14
+      7   53.8%      Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      7  100.0%        Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      7  100.0%          Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      7  100.0%            Function: ^Module.require node:internal/modules/cjs/loader:997:36
+      6   46.2%      Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      6  100.0%        Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      6  100.0%          Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      6  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+     12    1.2%    LazyCompile: *SourceNode_walk /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/source-map/lib/source-node.js:221:53
+     10   83.3%      LazyCompile: *SourceNode_walk /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/source-map/lib/source-node.js:221:53
+     10  100.0%        LazyCompile: *SourceNode_walk /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/source-map/lib/source-node.js:221:53
+      9   90.0%          LazyCompile: *SourceNode_walk /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/source-map/lib/source-node.js:221:53
+      8   88.9%            LazyCompile: *SourceNode_walk /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/source-map/lib/source-node.js:221:53
+      1   11.1%            Function: ^SourceNode_toString /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/source-map/lib/source-node.js:318:61
+      1   10.0%          Function: ^SourceNode_toString /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/source-map/lib/source-node.js:318:61
+      1  100.0%            t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+      2   16.7%      Function: ^SourceNode_toString /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/source-map/lib/source-node.js:318:61
+      2  100.0%        t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+      2  100.0%          LazyCompile: *compile /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      2  100.0%            LazyCompile: *<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+
+    359   17.4%  T _posix_spawn_file_actions_adddup2
+
+    220   10.7%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    217   98.6%    Function: ^compileFunction node:vm:308:25
+    213   98.2%      Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+    212   99.5%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+    206   97.2%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+    206  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      6    2.8%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      6  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      4    1.8%      LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1017:18
+      4  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1059:37
+      4  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      3   75.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:969:33
+      1   25.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      3    1.4%    LazyCompile: ~compileFunction node:vm:308:25
+      3  100.0%      LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1017:18
+      3  100.0%        LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1059:37
+      3  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      3  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:969:33
+
+     61    3.0%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+     55   90.2%    Function: ^readSync node:fs:684:18
+     55  100.0%      Function: ^tryReadSync node:fs:429:21
+     55  100.0%        Function: ^readFileSync node:fs:450:22
+     52   94.5%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+     52  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      2    3.6%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      2  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    1.8%          Function: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/saslprep/lib/memory-code-points.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      5    8.2%    Function: ^read node:internal/fs/read_file_context:85:7
+      5  100.0%      Function: ^readFileAfterStat node:fs:326:27
+      1    1.6%    LazyCompile: ~readSync node:fs:684:18
+      1  100.0%      LazyCompile: ~tryReadSync node:fs:429:21
+      1  100.0%        LazyCompile: ~readFileSync node:fs:450:22
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:969:33
+
+     29    1.4%  T _semaphore_destroy
+      4   13.8%    t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+      1   25.0%      LazyCompile: ~resolveAuthMechanism /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/auth/mongo_credentials.js:76:25
+      1  100.0%        LazyCompile: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connect.js:88:85
+      1  100.0%          LazyCompile: ~onMessage /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connection.js:157:14
+      1  100.0%            LazyCompile: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connection.js:61:44
+      1   25.0%      LazyCompile: ~matchesParentDomain /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/connection_string.js:32:29
+      1  100.0%        LazyCompile: ~resolveSRVRecord /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/connection_string.js:45:32
+      1  100.0%          t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+      1   25.0%      LazyCompile: ~checkServerIdentity node:tls:274:59
+      1  100.0%        LazyCompile: ~onConnectSecure node:_tls_wrap:1518:25
+      1  100.0%          Function: ^emit node:events:475:44
+      1  100.0%            LazyCompile: ~TLSSocket._finishInit node:_tls_wrap:920:43
+      1   25.0%      Function: ^getOwn node:internal/bootstrap/loaders:180:16
+      1  100.0%        Function: ^syncExports node:internal/bootstrap/loaders:287:14
+      1  100.0%          Function: ^<anonymous> node:internal/bootstrap/loaders:273:15
+      1  100.0%            T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    3.4%    LazyCompile: ~updateServers /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/sdam/topology.js:488:23
+      1  100.0%      LazyCompile: ~serverUpdateHandler /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/sdam/topology.js:320:24
+      1  100.0%        LazyCompile: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/sdam/topology.js:480:53
+      1  100.0%          Function: ^emit node:events:475:44
+      1  100.0%            LazyCompile: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/sdam/server.js:61:55
+      1    3.4%    LazyCompile: ~serverUpdateHandler /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/sdam/topology.js:320:24
+      1  100.0%      Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/sdam/topology.js:480:53
+      1  100.0%        Function: ^emit node:events:475:44
+      1  100.0%          Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/sdam/server.js:61:55
+      1  100.0%            Function: ^emit node:events:475:44
+      1    3.4%    LazyCompile: ~serialize /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/bson.js:110:19
+      1  100.0%      LazyCompile: ~toBin /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/commands.js:82:10
+      1  100.0%        LazyCompile: ~writeCommand /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/message_stream.js:40:17
+      1  100.0%          LazyCompile: ~write /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connection.js:427:15
+      1  100.0%            LazyCompile: ~command /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connection.js:274:12
+      1    3.4%    LazyCompile: ~ret._setup /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/runtime.js:217:25
+      1  100.0%      LazyCompile: ~ret /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/runtime.js:188:15
+      1  100.0%        LazyCompile: ~ret /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/compiler.js:515:15
+      1  100.0%          LazyCompile: ~ExpressHandlebars._renderTemplate /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:321:60
+      1  100.0%            LazyCompile: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:227:47
+      1    3.4%    LazyCompile: ~parse /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/commands.js:426:10
+      1  100.0%      LazyCompile: ~onMessage /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connection.js:157:14
+      1  100.0%        Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connection.js:61:44
+      1  100.0%          Function: ^emit node:events:475:44
+      1  100.0%            Function: ^processIncomingData /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/message_stream.js:84:29
+      1    3.4%    LazyCompile: ~normalizeArgs node:net:217:23
+      1  100.0%      LazyCompile: ~Socket.connect node:net:959:36
+      1  100.0%        LazyCompile: ~connect node:_tls_wrap:1599:35
+      1  100.0%          LazyCompile: ~makeConnection /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connect.js:256:24
+      1  100.0%            LazyCompile: ~connect /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connect.js:30:17
+      1    3.4%    LazyCompile: ~maybeReadMore_ node:internal/streams/readable:609:24
+      1  100.0%      Function: ^processTicksAndRejections node:internal/process/task_queues:68:35
+      1    3.4%    LazyCompile: ~isLenient node:_http_common:258:19
+      1  100.0%      Function: ^connectionListenerInternal node:_http_server:448:36
+      1  100.0%        Function: ^defaultTriggerAsyncIdScope node:internal/async_hooks:456:36
+      1  100.0%          Function: ^connectionListener node:_http_server:442:28
+      1  100.0%            LazyCompile: *emit node:events:475:44
+      1    3.4%    LazyCompile: ~insert node:internal/timers:350:16
+      1  100.0%      LazyCompile: ~setUnrefTimeout node:internal/timers:372:25
+      1  100.0%        LazyCompile: ~setStreamTimeout node:internal/stream_base_commons:237:26
+      1  100.0%          LazyCompile: ~makeConnection /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connect.js:256:24
+      1  100.0%            LazyCompile: ~connect /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connect.js:30:17
+      1    3.4%    LazyCompile: ~getStatsFromBinding node:internal/fs/utils:531:29
+      1  100.0%      LazyCompile: ~statSync node:fs:1543:18
+      1  100.0%        LazyCompile: ~module.exports /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/escalade/sync/index.js:4:27
+      1  100.0%          LazyCompile: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/yargs/build/index.cjs:1:47299
+      1  100.0%            LazyCompile: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/yargs/build/index.cjs:1:47061
+      1    3.4%    LazyCompile: ~emit node:events:475:44
+      1  100.0%      LazyCompile: ~<anonymous> node:internal/fs/streams:66:62
+      1  100.0%        LazyCompile: ~<anonymous> node:fs:188:10
+      1    3.4%    LazyCompile: ~continueScramConversation /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+      1  100.0%      LazyCompile: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/auth/scram.js:85:80
+      1  100.0%        LazyCompile: ~onMessage /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connection.js:157:14
+      1  100.0%          LazyCompile: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connection.js:61:44
+      1  100.0%            Function: ^emit node:events:475:44
+      1    3.4%    LazyCompile: ~connect node:_tls_wrap:1599:35
+      1  100.0%      LazyCompile: ~makeConnection /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connect.js:256:24
+      1  100.0%        LazyCompile: ~connect /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connect.js:30:17
+      1  100.0%          LazyCompile: ~checkServer /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/sdam/monitor.js:143:21
+      1  100.0%            LazyCompile: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/sdam/monitor.js:226:12
+      1    3.4%    LazyCompile: ~aliasable /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:1006:32
+      1  100.0%      LazyCompile: ~resolvePossibleLambda /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:527:56
+      1  100.0%        LazyCompile: ~compile /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1  100.0%          LazyCompile: ~compileChildren /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:805:44
+      1  100.0%            LazyCompile: ~compile /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/handlebars/dist/cjs/handlebars/compiler/javascript-compiler.js:73:28
+      1    3.4%    LazyCompile: ~aliasFields /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongoose/lib/schema.js:172:21
+      1  100.0%      LazyCompile: ~add /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongoose/lib/schema.js:580:36
+      1  100.0%        LazyCompile: ~Schema /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongoose/lib/schema.js:96:16
+      1  100.0%          Function: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/models/usuario.js:1:1
+      1  100.0%            Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1    3.4%    LazyCompile: ~MongoDBNamespace /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/utils.js:305:16
+      1  100.0%      LazyCompile: ~fromString /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/utils.js:315:22
+      1  100.0%        Function: ^ns /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/utils.js:293:12
+      1  100.0%          LazyCompile: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/sdam/topology.js:189:106
+      1  100.0%            LazyCompile: ~processWaitQueue /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/sdam/topology.js:547:26
+      1    3.4%    LazyCompile: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:20:46
+      1  100.0%      t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+      1  100.0%        LazyCompile: ~__awaiter /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:18:54
+      1  100.0%          LazyCompile: ~ExpressHandlebars.getPartials /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:93:56
+      1  100.0%            LazyCompile: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:251:47
+      1    3.4%    Function: ~<anonymous> node:internal/fs/rimraf:1:1
+      1  100.0%      LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1  100.0%        LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1  100.0%          Function: ~<anonymous> node:internal/fs/promises:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+
+     25    1.2%  /usr/lib/system/libsystem_pthread.dylib
+      1    4.0%    LazyCompile: ~yargsParser.detailed /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/yargs-parser/build/index.cjs:1043:33
+      1  100.0%      LazyCompile: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/yargs/build/index.cjs:1:56853
+      1  100.0%        LazyCompile: ~parse /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/yargs/build/index.cjs:1:39721
+      1  100.0%          LazyCompile: ~get /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/yargs/build/index.cjs:1:61383
+      1  100.0%            Function: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/routers/web/info.js:1:1
+      1    4.0%    LazyCompile: ~writeCommand /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/message_stream.js:40:17
+      1  100.0%      LazyCompile: ~write /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connection.js:427:15
+      1  100.0%        LazyCompile: ~command /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connection.js:274:12
+      1  100.0%          LazyCompile: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connect.js:78:43
+      1  100.0%            LazyCompile: ~prepareHandshakeDocument /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connect.js:151:34
+      1    4.0%    LazyCompile: ~wrapfunction /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/depd/index.js:413:23
+      1  100.0%      Function: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/send/index.js:1:1
+      1  100.0%        Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1    4.0%    LazyCompile: ~setupDebugEnv node:internal/bootstrap/pre_execution:249:23
+      1  100.0%      LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    4.0%    LazyCompile: ~session /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-session/index.js:179:26
+      1  100.0%      LazyCompile: ~handle /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%        LazyCompile: ~trim_prefix /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/router/index.js:293:23
+      1  100.0%          LazyCompile: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/router/index.js:280:64
+      1  100.0%            LazyCompile: ~process_params /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/router/index.js:338:47
+      1    4.0%    LazyCompile: ~readableAddChunk node:internal/streams/readable:236:26
+      1  100.0%      Function: ^Readable.push node:internal/streams/readable:227:35
+      1  100.0%        LazyCompile: ~onStreamRead node:internal/stream_base_commons:167:22
+      1    4.0%    LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      1  100.0%      Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    4.0%    LazyCompile: ~prepareHandshakeDocument /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connect.js:151:34
+      1  100.0%      LazyCompile: ~performInitialHandshake /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connect.js:62:33
+      1  100.0%        LazyCompile: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connect.js:31:63
+      1  100.0%          LazyCompile: ~callback /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connect.js:269:31
+      1  100.0%            LazyCompile: ~connectHandler /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connect.js:313:28
+      1    4.0%    LazyCompile: ~patchProcessObject node:internal/bootstrap/pre_execution:89:28
+      1  100.0%      LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      1  100.0%        Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    4.0%    LazyCompile: ~passwordDigest /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/auth/scram.js:182:24
+      1  100.0%      LazyCompile: ~continueScramConversation /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+      1  100.0%        LazyCompile: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/auth/scram.js:85:80
+      1  100.0%          LazyCompile: ~onMessage /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connection.js:157:14
+      1  100.0%            LazyCompile: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connection.js:61:44
+      1    4.0%    LazyCompile: ~emit node:events:475:44
+      1  100.0%      LazyCompile: ~_addListener node:events:555:22
+      1  100.0%        LazyCompile: ~addListener node:events:618:58
+      1  100.0%          LazyCompile: ~setupWarningHandler node:internal/bootstrap/pre_execution:142:29
+      1  100.0%            LazyCompile: ~prepareMainThreadExecution node:internal/bootstrap/pre_execution:28:36
+      1    4.0%    LazyCompile: ~createHash node:crypto:129:20
+      1  100.0%      LazyCompile: ~passwordDigest /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/auth/scram.js:182:24
+      1  100.0%        LazyCompile: ~continueScramConversation /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/auth/scram.js:93:35
+      1  100.0%          LazyCompile: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/auth/scram.js:85:80
+      1  100.0%            LazyCompile: ~onMessage /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connection.js:157:14
+      1    4.0%    LazyCompile: ~compareTopologyVersion /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/sdam/server_description.js:175:32
+      1  100.0%      LazyCompile: ~isStaleServerDescription /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/sdam/topology.js:616:34
+      1  100.0%        LazyCompile: ~serverUpdateHandler /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/sdam/topology.js:320:24
+      1  100.0%          LazyCompile: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/sdam/topology.js:480:53
+      1  100.0%            Function: ^emit node:events:475:44
+      1    4.0%    LazyCompile: ~callback /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connect.js:63:31
+      1  100.0%      LazyCompile: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connect.js:88:85
+      1  100.0%        LazyCompile: ~onMessage /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connection.js:157:14
+      1  100.0%          LazyCompile: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongodb/lib/cmap/connection.js:61:44
+      1  100.0%            Function: ^emit node:events:475:44
+      1    4.0%    LazyCompile: ~ServerResponse node:_http_server:178:24
+      1  100.0%      LazyCompile: ~parserOnIncoming node:_http_server:857:26
+      1  100.0%        LazyCompile: ~parserOnHeadersComplete node:_http_common:77:33
+      1    4.0%    LazyCompile: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongoose/lib/model.js:1765:52
+      1  100.0%      LazyCompile: ~promiseOrCallback /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongoose/lib/helpers/promiseOrCallback.js:8:44
+      1  100.0%        LazyCompile: ~Mongoose._promiseOrCallback /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongoose/lib/index.js:1269:49
+      1  100.0%          LazyCompile: ~ensureIndexes /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongoose/lib/model.js:1755:45
+      1  100.0%            LazyCompile: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/mongoose/lib/model.js:1358:5
+      1    4.0%    Function: ~<anonymous> node:internal/main/run_main_module:1:1
+      1    4.0%    Function: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/finalhandler/node_modules/debug/src/node.js:1:1
+      1  100.0%      LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          LazyCompile: ~Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:757:24
+      1    4.0%    Function: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/@dabh/diagnostics/node/development.js:1:1
+      1  100.0%      Function: ^Module._compile node:internal/modules/cjs/loader:1059:37
+      1  100.0%        Function: ^Module._extensions..js node:internal/modules/cjs/loader:1114:37
+      1  100.0%          Function: ^Module.load node:internal/modules/cjs/loader:969:33
+      1  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    4.0%    Function: ^Writable.uncork node:internal/streams/writable:341:37
+      1  100.0%      LazyCompile: ~end node:_http_outgoing:833:45
+      1  100.0%        LazyCompile: ~end /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-session/index.js:250:27
+      1  100.0%          LazyCompile: ~send /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/response.js:111:25
+      1  100.0%            LazyCompile: ~done /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express/lib/response.js:1033:27
+      1    4.0%    Function: ^Long.compare /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/long.js:291:39
+      1  100.0%      LazyCompile: *deserializeObject /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%        LazyCompile: *deserializeObject /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/parser/deserializer.js:65:27
+      1  100.0%          Function: ^deserialize /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/parser/deserializer.js:36:21
+      1  100.0%            Function: ^deserialize /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/bson/lib/bson.js:161:21
+      1    4.0%    Function: ^<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:20:46
+      1  100.0%      t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+      1  100.0%        Function: ^__awaiter /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:18:54
+      1  100.0%          LazyCompile: ~ExpressHandlebars.render /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:222:51
+      1  100.0%            LazyCompile: ~<anonymous> /Users/rsoberon/dev/ch-backend-desafios/loggers-gzip-performance/node_modules/express-handlebars/dist/express-handlebars.js:251:47
+
+     22    1.1%  T _mach_get_times
+
