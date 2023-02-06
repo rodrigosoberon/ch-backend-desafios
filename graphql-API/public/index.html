@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraphQL</title>
+</head>
+
+<body>
+    <label for="query">consulta</label><textarea id="query" rows="35" cols="50"></textarea>
+
+    <button id="btnSendQuery">Enviar consulta GraphQl</button>
+
+    <p id="response"></p>
+
+<script>
+  const inputQuery = document.getElementById('query')
+  const btnSendQuery = document.getElementById('btnSendQuery')
+  const response = document.getElementById('response')
+
+  btnSendQuery.addEventListener('click', clickHandler)
+
+  async function clickHandler () {
+    const query = getQuery()
+    const data = await sendQuery(query)
+    render(data)
+  }
+
+  function getQuery () {
+    const wholeQuery = inputQuery.value
+
+    const indexStart = inputQuery.selectionStart
+    const indexEnd = inputQuery.selectionEnd
+    const selection = wholeQuery.substring(indexStart, indexEnd)
+
+    return selection || wholeQuery
+  }
+
+  async function sendQuery (query) {
+    try {
+      const response = await fetch('/graphql', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({ query })
+      })
+      return await response.json()
+    } catch (error) {
+      return error
+    }
+  }
+
+  function render (data) {
+    const html = JSON.stringify(data, null, 2)
+    response.innerHTML = `<pre>${html}</pre>`
+  }
+</script>
+</body>
+
+</html>
